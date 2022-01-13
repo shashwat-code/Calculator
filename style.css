@@ -1,0 +1,110 @@
+html,body{
+    min-width: 100%;
+    padding: 0px;
+    /* margin: 0px; */
+    
+    min-height: 100%;
+}
+body{
+    background-color: black;
+}
+.mainContent{
+    margin: auto;
+    display: grid;
+    grid-template-rows: 100px 500px;
+    position: relative;
+    width: 400px;
+    height: 600px;
+    border: none;
+    background-color: #1C1C1C;
+}
+    /* border: 1px solid white; */
+
+
+.numPad{
+    display: grid;
+    grid-template-columns: 300px 100px;
+    padding: 0%;
+    margin: 0%;
+    border:none;
+    /* background-color: yellow; */
+}
+.digit{
+    display: grid;
+    grid-template-columns: auto auto;
+    border:none;
+}
+.operandDisplay1{
+    display: grid;
+    grid-template-columns: 300px 100px;
+    border:none;
+}
+.operandDisplay2{
+    display: grid;
+    grid-template-columns: 200px 100px;
+    border:none;
+}
+.numDisplay{
+    display: grid;
+    grid-template-rows: 400px 100px;
+    border:none;
+}
+.insideNumpad{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    border:none;
+    
+}
+
+.btnStyle{
+    width:100px;
+    height: 100px;
+    padding: 0px;
+    border-radius: 0%;
+    border: 0.2px solid #1C1C1C;
+    font-size: 40px;
+    background-color: #FF9500;
+    color:white;
+}
+
+.output{
+    color:white;
+    font-size: 70px;
+    
+
+}
+
+.outputDisplay{
+    /* width: 100%; */
+    background-color:#1C1C1C;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1%;
+    /* border-left :1px solid white; */
+}
+.zeroButton{
+    width:200px;
+}
+.btnNum{
+    background-color: #505050;
+}
+.topBtn{
+    background-color: #D4D4D2;
+    color:#1C1C1C;
+}
+.btnStyle:active{
+    background: rgba( 255, 149, 0, 50%);
+    /* opacity: 0.5; */
+    /* rgba( 28, 28, 28, 100%) */
+    /* color : #FF9500; */
+}
+.topBtn:active{
+    background-color: rgba( 212, 211, 210, 50%);
+    color:white;
+}
+.btnNum:active{
+    background-color: rgba( 80, 80, 80, 50%);
+}
+
