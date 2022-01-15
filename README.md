@@ -14,5 +14,5 @@
 ## Features: 
  - All button are accesible
  - Has a similiar UI as Apple Calculator as well as color palette
- - Uses eval functioj avialable in JS.
+ - Uses eval function avialable in JS.
  
