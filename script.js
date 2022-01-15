@@ -6,13 +6,11 @@ function getDigit(id,val){
     }else{
         ans+=document.getElementById(id).value
     }
-    
-    console.log(ans)
 }
 
-function displayResult(){
+function displayResult(res){
     let display = document.getElementById("input")
-    display.innerHTML = checkAnswer()
+    display.innerHTML = res
 }
 
 function checkAnswer(){
@@ -29,7 +27,5 @@ function getResult(){
 
 function clearInput(){
     ans=""
-    let display = document.getElementById("input")
-    display.innerHTML = "0"
-    console.log("this is it: "+ans)
+    displayResult("0")
 }
