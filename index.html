@@ -2,35 +2,38 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css"></link>
+        <title>Calculator</title>
     </head>
     <body>
+        <h1 id="title">Calculator</h1>
         <div class="mainContent">
+        
             <div class="outputDisplay">
-                <label class="output" type="input" id="input">0</label>
+                <input class="output" type="input" id="input">
             </div>
 
             <div class="numPad">
-                <div class = "digit">
+                <div class = "display">
                     <div class="operandDisplay1">
 
                         <div class="numDisplay">
                             <div class="insideNumpad">
-                                <button id="clr" class="operator btnStyle topBtn" onclick="clearInput()" value="clear">AC</button>
+                                <button id="clr" class="operator btnStyle topBtn" onclick="inputClr()" value="clear">AC</button>
                                 <button  class="operator btnStyle topBtn">+/-</button>
-                                <button id="modulus" class="operator btnStyle topBtn" onclick="getDigit(this.id,2)" value="%">%</button>
-                                <button id="block7" class="number btnStyle btnNum" onclick="getDigit(this.id,1)">7</button>
-                                <button id="block8" class="number btnStyle btnNum" onclick="getDigit(this.id,1)">8</button>
-                                <button id="block9" class="number btnStyle btnNum" onclick="getDigit(this.id,1)">9</button>
-                                <button id="block4" class="number btnStyle btnNum" onclick="getDigit(this.id,1)">4</button>
-                                <button id="block5" class="number btnStyle btnNum" onclick="getDigit(this.id,1)">5</button>
-                                <button id="block6" class="number btnStyle btnNum" onclick="getDigit(this.id,1)">6</button>
-                                <button id="block1" class="number btnStyle btnNum" onclick="getDigit(this.id,1)">1</button>
-                                <button id="block2" class="number btnStyle btnNum" onclick="getDigit(this.id,1)">2</button>
-                                <button id="block3" class="number btnStyle btnNum" onclick="getDigit(this.id,1)">3</button>
+                                <button id="modulus" class="operator btnStyle topBtn" onclick="display('%')" value="%">%</button>
+                                <button id="block7" class="number btnStyle btnNum" onclick="display('7')">7</button>
+                                <button id="block8" class="number btnStyle btnNum" onclick="display('8')">8</button>
+                                <button id="block9" class="number btnStyle btnNum" onclick="display('9')">9</button>
+                                <button id="block4" class="number btnStyle btnNum" onclick="display('4')">4</button>
+                                <button id="block5" class="number btnStyle btnNum" onclick="display('5')">5</button>
+                                <button id="block6" class="number btnStyle btnNum" onclick="display('6')">6</button>
+                                <button id="block1" class="number btnStyle btnNum" onclick="display('1')">1</button>
+                                <button id="block2" class="number btnStyle btnNum" onclick="display('2')">2</button>
+                                <button id="block3" class="number btnStyle btnNum" onclick="display('3')">3</button>
                             </div>
                             <div class="operandDisplay2">
-                                <button id="block0" class="number btnStyle zeroButton btnNum" onclick="getDigit(this.id,1)">0</button>
-                                <button id="dot"    class="number btnStyle btnNum" onclick="getDigit(this.id,1)">.</button>
+                                <button id="block0" class="number btnStyle zeroButton btnNum" onclick="display('0')">0</button>
+                                <button id="dot"    class="number btnStyle btnNum" onclick="display('.')">.</button>
                             </div>
                         </div>
                         
@@ -38,11 +41,11 @@
                 </div>
                 <div class="operation">
                     
-                    <button id="divide"   class="operator btnStyle" onclick="getDigit(this.id,2)" value="/">÷</button>
-                    <button id="multiply" class="operator btnStyle" onclick="getDigit(this.id,2)" value="*">x</button>
-                    <button id="minus"    class="operator btnStyle" onclick="getDigit(this.id,2)" value="-">-</button>
-                    <button id="plus"     class="operator btnStyle" onclick="getDigit(this.id,2)" value="+">+</button>
-                    <button id="ans"      class="operator btnStyle " onclick="getResult()" value="=">=</button>
+                    <button id="divide"   class="operator btnStyle" onclick="display('/')" value="/">÷</button>
+                    <button id="multiply" class="operator btnStyle" onclick="display('*')" value="*">x</button>
+                    <button id="minus"    class="operator btnStyle" onclick="display('-')" value="-">-</button>
+                    <button id="plus"     class="operator btnStyle" onclick="display('+')" value="+">+</button>
+                    <button id="ans"      class="operator btnStyle " onclick="solve()" value="=">=</button>
                    
                 </div>
 
